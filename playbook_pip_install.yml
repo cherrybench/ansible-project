@@ -1,0 +1,9 @@
+---
+- name: pip install some python packages
+  become: yes
+  hosts: node1
+  tasks:
+    - pip:
+        name:
+          - django>1.11.0,<1.12.0
+          - bottle>0.10,<0.20,!=0.11
