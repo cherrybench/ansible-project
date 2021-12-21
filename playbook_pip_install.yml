@@ -1,6 +1,6 @@
 ---
 - name: pip install some python packages
-  hosts: node[1-2]
+  hosts: node1,node2
   tasks:
     - pip:
         name:

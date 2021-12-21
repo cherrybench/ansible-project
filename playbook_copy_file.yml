@@ -4,8 +4,8 @@
   become: yes
   tasks:
     - copy:
-      src: "{{ playbook_dir }}/nginx.cfg"
-      dest: /home/osboxes/nginx.cfg
-      owner: devops
-      group: adm
-      mode: '0700'
+        src: "{{ playbook_dir }}/nginx.cfg"
+        dest: /home/osboxes/nginx.cfg
+        owner: devops
+        group: adm
+        mode: '0700'
