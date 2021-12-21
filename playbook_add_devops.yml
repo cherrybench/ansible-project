@@ -1,0 +1,16 @@
+---
+- name: Add a group and user named devops
+  hosts: all
+  tasks:
+    - name: add group
+      group:
+        name: devops
+        state: present
+    - name: add user
+      user:
+        name: devops
+        comment: Devops Service Account
+        uid: 1040
+        shell: /bin/bash
+        state: present
+        group: devops

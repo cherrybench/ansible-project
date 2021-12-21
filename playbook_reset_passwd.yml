@@ -1,0 +1,8 @@
+---
+- name: Reset linux account on all hosts
+  hosts: all
+  tasks:
+    - user:
+        name: {{ user }}
+        update_password: always
+        password: "{{ newpw|password_hash('sha512') }}"
