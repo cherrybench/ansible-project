@@ -3,6 +3,6 @@
   hosts: all
   tasks:
     - authorized_key:
-        user: osboxes
+        user: root
         state: present
         key: "{{ lookup('file', '/home/osboxes/.ssh/id_rsa.pub') }}"
