@@ -1,6 +1,7 @@
 ---
 - name: Copy SSH public file to remote servers
   hosts: all
+  become: yes
   tasks:
     - authorized_key:
         user: {{ user }}

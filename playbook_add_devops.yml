@@ -1,6 +1,7 @@
 ---
 - name: Add a group and user named devops
   hosts: all
+  become: yes
   tasks:
     - name: add group
       group:
