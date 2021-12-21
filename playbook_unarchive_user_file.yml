@@ -1,0 +1,12 @@
+---
+- name: Copy and unchive files
+  hosts: all
+  become: yes
+  tasks:
+    - unchive:
+      copy: yes
+      src: "{{ playbook_dir }}/a_folder.xz"
+      dest: /home/osboxes/
+      owner: osboxes
+      group: devops
+      mode: '0644'
