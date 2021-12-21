@@ -1,6 +1,5 @@
 ---
 - name: pip install some python packages
-  become: yes
   hosts: node1
   tasks:
     - pip:
