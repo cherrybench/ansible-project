@@ -3,10 +3,10 @@
   hosts: all
   become: yes
   tasks:
-    - unchive:
-      copy: yes
-      src: "{{ playbook_dir }}/a_folder.xz"
-      dest: /home/osboxes/
-      owner: osboxes
-      group: devops
-      mode: '0644'
+    - unarchive:
+        copy: yes
+        src: "{{ playbook_dir }}/user_files/a_folder.xz"
+        dest: /home/osboxes/
+        owner: osboxes
+        group: devops
+        mode: '0644'
