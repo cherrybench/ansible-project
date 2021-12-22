@@ -1,0 +1,9 @@
+[node1]
+192.168.0.173
+
+[node2]
+192.168.0.204
+
+[dbservers:children]
+node1
+node2
