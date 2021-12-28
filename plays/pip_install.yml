@@ -1,6 +1,8 @@
 ---
 - name: pip install some python packages
   hosts: node1,node2
+  become: yes
+  become_user: "{{ become_user }}"
   tasks:
     - pip:
         name:

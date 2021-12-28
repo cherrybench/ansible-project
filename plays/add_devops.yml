@@ -2,6 +2,7 @@
 - name: Add a group and user named devops
   hosts: all
   become: yes
+  become_user: "{{ become_user }}"
   tasks:
     - name: add group
       group:

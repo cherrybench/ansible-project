@@ -2,6 +2,7 @@
 - name: Copy and unchive files
   hosts: all
   become: yes
+  become_user: "{{ become_user }}"
   tasks:
     - unarchive:
         copy: yes

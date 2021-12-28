@@ -2,6 +2,7 @@
 - name: Reset linux account on all hosts
   hosts: all
   become: yes
+  become_user: "{{ become_user }}"
   tasks:
     - user:
         name: "{{ user }}"
