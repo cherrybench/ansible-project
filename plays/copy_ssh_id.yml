@@ -1,9 +1,8 @@
 ---
 - name: Copy SSH public file to remote servers
   hosts: all
-  become: yes
   tasks:
     - authorized_key:
-        user: {{ user }}
+        user: "{{ user }}"
         state: present
         key: "{{ lookup('file', '/home/osboxes/.ssh/id_rsa.pub') }}"
