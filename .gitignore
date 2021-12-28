@@ -1,1 +1,4 @@
 .idea
+
+# use symlink for roles, not pushed to git
+roles
