@@ -1,4 +1,4 @@
 .idea
 
-# use symlink for roles, not pushed to git
-roles
+roles/geerlingguy.docker
+roles/cloudalchemy.grafana

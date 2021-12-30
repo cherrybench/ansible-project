@@ -1,0 +1,7 @@
+# grafana, from ansible galaxy
+- src: cloudalchemy.grafana
+
+# docker, from ansible galaxy
+- src: geerlingguy.docker
+
+
