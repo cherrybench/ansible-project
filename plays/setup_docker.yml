@@ -1,0 +1,11 @@
+---
+- name: Setup docker on all hosts
+  hosts: all
+  roles:
+    - role: geerlingguy.docker
+      vars:
+        - ansible_become: true
+        - ansible_user: "{{ become_user }}"
+        - docker_users:
+            - osboxes
+
